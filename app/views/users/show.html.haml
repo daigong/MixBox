@@ -1,0 +1,83 @@
+.row
+  .span2
+    User Image
+  .span3
+    UserName(NickName)
+  .span4.offset3
+    %button Follow
+    %button Message
+    %button Other
+
+.row
+  .span6
+    %ul
+      %li
+        E-mail:xxxxxxxxx@gmail.com
+      %li
+        Member Since:Jun 26,2008
+      %li
+        Last Visited:Jun 26,2008
+      %li
+        Blog:xxxxxx.xxxxx.com
+      %li
+        Location: Beijing
+
+  .span2
+    Followers:
+    %strong 200
+  .span2
+    Stories:
+    %strong 200
+  .span2
+    followed:
+    %strong 200
+
+.row
+  .span6
+    .row
+      .span6
+        %h3 Stories List
+    .row
+      .span6
+        %form.form-search
+          %input.input-Large.search-query
+          %button.btn(type='submit') Search
+    .row
+      .span6.stories-list
+        -20.times do
+          .story
+            .row
+              .span2
+                =link_to "Story-Name",story_path(@user.login_name,@story.title);
+              .span1.offset1
+                Type
+              .span1
+                Watchers
+              .span1
+                Forks
+            .row
+              .span6
+                Story Introduction..............................................
+
+  .span6
+    .row
+      .span6
+        %h3 Public Activity List
+    .row
+      .span6
+        %form.form-search
+          %input.input-Large.search-query
+          %button.btn(type='submit') Search
+      .span6.activities-list
+        -20.times do
+          .activity
+            .row
+              .span1
+                Icon
+              .span5
+                daigong starred saberma/shopqi 8 days ago
+            .row
+              .span5.offset1
+                Flexible authentication solution for Rails with Warden.
+
+

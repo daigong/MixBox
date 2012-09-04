@@ -1,0 +1,25 @@
+.row
+  .span5
+    = form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f|
+      %fieldset
+        %legend="用户登录"
+        = render "common/error_messages", :target => resource
+        %div
+          = f.label "登录名"
+          = f.text_field :login_name
+        %div
+          = f.label "密码"
+          = f.password_field :password
+        - if devise_mapping.rememberable?
+          %div
+            = f.check_box :remember_me
+            = f.label "下次自动登录"
+        %div
+          =f.submit "登录",:class => "btn primary"
+  .span7
+    .login_messages
+      %h3
+        header
+      .messages
+        Lorem ipsum dolor sit amet, maiores ornare ac fermentum, imperdiet ut vivamus a, nam lectus at nunc. Quam euismod sem, semper ut potenti pellentesque quisque. In eget sapien sed, sit duis vestibulum ultricies, placerat morbi amet vel, nullam in in lorem vel. In molestie elit dui dictum, praesent nascetur pulvinar sed, in dolor pede in aliquam, risus nec error quis pharetra. Eros metus quam augue suspendisse, metus rutrum risus erat in.  In ultrices quo ut lectus, etiam vestibulum urna a est, pretium luctus euismod nisl, pellentesque turpis hac ridiculus massa. Venenatis a taciti dolor platea, curabitur lorem platea urna odio, convallis sit pellentesque lacus proin. Et ipsum velit diam nulla, fringilla vel tincidunt vitae, elit turpis tellus vivamus, dictum adipiscing convallis magna id. Viverra eu amet sit, dignissim tincidunt volutpat nulla tincidunt
+

@@ -1,0 +1,64 @@
+.row
+  .alert{:style=>'text-align:center'}
+    %h2 2,052,073 people hosting over 3,588,161 repositories
+
+.row
+  .alert{:style=>'text-align:center'}
+    %h2 Stories list
+
+.row
+  .alert{:style=>'text-align:center'}
+    %h2 teams list
+
+.row
+  %ul.nav.nav-tabs#index-tabs
+    %li.active
+      %a{:href => "#star-stores"} Star Stores
+    %li
+      %a{:href => "#hot-stories"} Hot Stories
+    %li
+      %a{:href => "#hot-teams"} Hot Teams
+    %li
+      %a{:href => "#hot-users"} Hot Users
+  .tab-content
+    .tab-pane.active#star-stores
+      .span4
+        %table.table.table-striped
+          %tr
+            %td Story_1
+          %tr
+            %td Story_2
+          %tr
+            %td Story_3
+          %tr
+            %td Story_1
+          %tr
+            %td Story_2
+          %tr
+            %td Story_3
+      .span6
+        .story-introduction
+          Story Introduction..............................
+      .span2
+        .story-image
+          XXXXXXXXXXXXXXXXX
+    .tab-pane#hot-stories
+      .span4
+        %table.table.table-striped
+          %tr
+            %td hot-story_1
+          %tr
+            %td hot-story_2
+          %tr
+            %td hot-story_3
+      .span6
+        .story-introduction
+          Story Introduction..............................
+      .span2
+        .story-image
+          XXXXXXXXXXXXXXXXX
+    .tab-pane#hot-teams
+      3
+    .tab-pane#hot-users
+      4
+

@@ -1,0 +1,54 @@
+.row
+  .span12
+    .navbar.navbar-inverse
+      .navbar-inner
+        %ul.nav
+          %li
+            %a{:href => "#"} Story
+          %li
+            %a{:href => "#"} Pull Requests
+          %li
+            %a{:href => "#"} Wiki
+          %li
+            %a{:href => "#"} Discuss
+          %li
+            %a{:href => "#"} Fork Graphs
+          %li
+            %a{:href => "#"} Admin
+
+.row
+  .span2
+    Story Image
+  .span3
+    .row
+      .span3
+        Star *****
+    .row
+      .span3
+        UserName/Story
+  .span6.offset1
+    %button Watch
+    %button Fork(Count)
+    %button Push(Count)
+
+.row
+  .span12.story-introduction
+    %h3 Story Introduction
+    .story-introduction-content
+      =".................................................."
+
+.row
+  .span12.last-commit
+    %h3 last-commit
+    .last-commit-content
+      ="..................................................."
+
+.row
+  .span12
+    %form.form-search
+      %input.input-Large.search-query
+      %button.btn(type='submit') Search
+
+.row
+  .span12
+    Story-Box
